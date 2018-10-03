@@ -1,0 +1,13 @@
+<% include layout_start %>
+<div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" <%=getMenuIsActive('home') %>> <a href="/">Strona główna</a></li>
+            <li role="presentation" <%= getMenuIsActive('match') %>><a href="/demo">Demo</a></li>
+            <li role="presentation" <%= locals.getMenuIsActive %>><a href="#">Galeria</a></li>
+            <li role="presentation" <%= locals.getMenuIsActive %>><a href="#">Cennik</a></li>
+            <li role="presentation" <%= locals.getMenuIsActive %>><a href="/account">Moje konto</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Commer.gy</h3>
+      </div>

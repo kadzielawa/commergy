@@ -1,0 +1,34 @@
+
+<% include head %>
+<% include menu %>
+
+<style>
+    .activities-container ul {
+        list-style-type: none;
+    }
+</style>
+<script>
+
+    var socket = io('//localhost:3000');
+
+    socket.once('connect', function(){});
+    socket.on('socketToMe', function(data){
+        console.log(data);
+    });
+    socket.once('disconnect', function(){
+        console.log('DISCONNECTED')
+    });
+
+</script>
+
+
+<div class="activities-container">
+    <ul>
+
+        <li>
+            <div class="activity-item">
+
+            </div>
+        </li>
+    </ul>
+</div>

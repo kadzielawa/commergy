@@ -1,0 +1,20 @@
+<% include head %>
+<% include menu %>
+	<fieldset class="fieldsetUser">
+  	<legend>Zarejestruj się!</legend>
+
+		<form id="registerForm" action="/register" method="POST">
+			<p>Login</p>
+			<input type="text" name="username">  
+			<p>Email</p>
+			<input type="text" name="email">  
+			<p>Hasło</p>
+			<input type="text" name="password"><br/>
+			<input id="registerButton" type="submit" value="Zarejestruj">
+		</form>
+	</fieldset>
+<script>
+
+</script>
+<% include footer %>
+

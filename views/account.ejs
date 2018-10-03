@@ -1,0 +1,20 @@
+<% include head %>
+<% include menu %>
+<h2> Zalogowany jako: <b><%= req.user.username %> </b></h2> 
+
+<div id='alerts-live'>
+
+</div> 
+
+<ul>
+<li>Twój kod do wstawienia na stronę:</li>
+
+<textarea rows=10 cols=50><%= userCode %></textarea>
+
+    <li><a href="/dashboard">Aktywność konta</a></li>
+    <li><a href="/verify">Weryfikacja</a></li>
+
+    <li><a href="/logout">Wyloguj się</a></li>
+</ul>
+<% include footer %>
+

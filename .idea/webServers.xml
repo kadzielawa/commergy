@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d27b8668-595b-499f-963a-1598485925cf" name="power.serwery.pl" url="http://power.serwery.pl">
+        <fileTransfer host="power.serwery.pl" port="22" accessType="SFTP" username="admin">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

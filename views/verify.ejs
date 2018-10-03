@@ -1,0 +1,28 @@
+
+<% include head %>
+<% include menu %>
+
+<h1>Weryfikacja strony:</h1>
+
+<div>
+    <form name="verification_form" id="verification-form">
+        <p>WWW: <input id="website" name="website"></p>
+        <p><button id="check_verify">Weryfikuj</button></p>
+    </form>
+</div>
+
+<script>
+    $('#check_verify').click(function() {
+       var formData = $('verification-form').serialize();
+
+    var siteToVerification =  $('#website').val();
+    $.ajax({url: siteToVerification,
+        success: function(data, textStatus, xhr) {
+            console.log(xhr.status);
+        },
+
+    });
+
+        return false;
+    });
+</script>

@@ -1,0 +1,13 @@
+
+<% include head %>
+<% include menu %>
+<script src="/javascripts/view/dashboard.js"></script>
+<div class="activities-container">
+<ul>
+
+</ul>
+</div>
+<script>
+    var comm_uid = '<%= comm_uid %>';
+    Dashboard.initialize(comm_uid);
+</script>

@@ -1,0 +1,10 @@
+
+<% include head %>
+<% include menu %>
+<script src="/javascripts/view/stats.js"></script>
+
+<% overall_stats.getData().forEach(function(drink) { %>
+<li>cxzczx</li>
+<li><%= drink.name %> - <%= drink.drunkness %></li>
+
+<% }); %>
