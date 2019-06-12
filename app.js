@@ -83,11 +83,9 @@ app.use(function(req, res, next) {
     io.on('connection', function (socket) {
         console.info('New client connected (id=' + socket.id + ').');
         var comm_uid = socket.handshake.query.comm_uid;
-        console.log('tworzy z comm_iod: ' + comm_uid);
-        console.log(socket.handshake.query);
+
         clients[comm_uid] = socket;
 
-      //  socket.emit('socketToMe', {comm_uid: comm_uid, my: "data"});
 
         // When socket disconnects, remove it from the list:
         socket.on('disconnect', function () {
@@ -109,7 +107,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
-//app.use('/admin', Utils.ifIsAdmin, admin);
 app.use('/api', api); 
 
 // passport config
